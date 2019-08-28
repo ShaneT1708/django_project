@@ -1,66 +1,73 @@
-body {
-    font-family: Arial;
-    padding-top: 100px;
+.masthead h1{
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+    -webkit-background-clip: text;
 }
 
-footer {
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid #ededed;
-    color: #A9A9A9;
+.btn-primary {
+    background-color: #C58444;
 }
 
-.icon-bar {
-    background-color: #fff;
+.text-primary {
+  color: #C58444 !important ;
 }
 
-.accountform {
-    padding-top: 20px;
+.contact-section .card hr {
+    border-color: #C58444;
+}
+#mainNav {
+    min-height: 56px;
+    background-color: rgba(0,0,0,0);
 }
 
-.badge {
-    padding-left: 9px;
-    padding-right: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
+#mainNav .navbar-brand{
+    color:rgba(255, 255, 255, 0.9);
 }
 
-.label-warning[href],
-.badge-warning[href] {
-    background-color: #c67605;
+#mainNav.navbar-shrink .navbar-brand {
+    color:rgba(0, 0, 0, 0.9);
 }
 
-.product {
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
+#mainNav .nav-link{
+    color:rgba(255, 255, 255, 0.9);
 }
 
-caption p {
-    word-wrap: break-word;
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #C57400;
+  border: 1px solid #C58444;
 }
 
-.row.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
+#mainNav.navbar-shrink {
+    background-color: rgba(255,255,255,0.85);
+  }
+.projects-section{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
 }
 
-.panel-default {
-    border-color: transparent;
-    padding: 0 10px;
+#mainNav.navbar-shrink .nav-link {
+    color: #161616;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
 }
 
-.panel-body {
-    height: 100%;
-    border: 1px solid #ddd;
+
+#mainNav.navbar-shrink .nav-link.active {
+    color: #C58444;
+    outline: none;
+    border-bottom: 0.25rem solid #C58444;
 }
 
-.product-description {
-    min-height: 40px;
+
+
+.projects-section .project-text hr {
+    border-color: #C58444;
+    border-width: .25rem;
+    width: 30%;
+}
+
+.contact-section .card {
+    border: 0;
+    border-bottom: 0.25rem solid #C58444;
 }
