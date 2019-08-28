@@ -28,26 +28,77 @@
   <section id="projects" class="projects-section ">
     <div class="container">
       <h2 class="text-white mb-4">Current Items</h2>
-      
-      
-      {% for product in products %}
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+
+      {% for product in products %} {% if forloop.counter0|divisibleby:"2" != 0 %}
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0 img-cont bg-black">
         <div class="col-lg-6">
-          
-          <img class="img-fluid" src="{{ MEDIA_URL }}{{ product.image }}" alt="">
+          <img class="img-fluid pro-img" src="{{ MEDIA_URL }}{{ product.image }}" alt="">
         </div>
+        
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                <h4 class="text-white">{{ product.name }}</h4>
+                <p class="mb-0 text-white-50">{{ product.description }}</p>
+                <div class="row">
+                  <div class="col-8">
+                    <p class="mb-0 price">€{{ product.price }}</p>
+                  </div>
+                  <div class="col-4">
+                    <form method="post" action="{% url 'add_to_cart' product.id %}" class="add-div">
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <input name="quantity" type="number" min="1" max="1" value="1" class="form-control" placeholder="Quantity" style="display: none;">
+                            <span class="input-group-btn">
+                                <button class="btn qadd" type="submit">Add</button>
+                            </span>
+                        </div>
+                    </form>
+                  </div>
+                </div>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
           </div>
         </div>
       </div>
+      {% else %}
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0 img-cont bg-black">
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">{{ product.name }}</h4>
+                <p class="mb-0 text-white-50">{{ product.description }}</p>
+                <div class="row">
+                  <div class="col-8">
+                    <p class="mb-0 price">€{{ product.price }}</p>
+                  </div>
+                  <div class="col-4">
+                    <form method="post" action="{% url 'add_to_cart' product.id %}" class="add-div">
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <input name="quantity" type="number" min="1" max="1" value="1" class="form-control" placeholder="Quantity" style="display: none;">
+                            <span class="input-group-btn">
+                                <button class="btn qadd" type="submit">Add</button>
+                            </span>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          
+          <img class="img-fluid pro-img" src="{{ MEDIA_URL }}{{ product.image }}" alt="">
+        </div>
+      </div>
+      {% endif %}
       {% endfor %}
 
 

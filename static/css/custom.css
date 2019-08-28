@@ -1,19 +1,4 @@
-.masthead h1{
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
-    -webkit-background-clip: text;
-}
 
-.btn-primary {
-    background-color: #C58444;
-}
-
-.text-primary {
-  color: #C58444 !important ;
-}
-
-.contact-section .card hr {
-    border-color: #C58444;
-}
 #mainNav {
     min-height: 56px;
     background-color: rgba(0,0,0,0);
@@ -59,7 +44,22 @@
     border-bottom: 0.25rem solid #C58444;
 }
 
+.masthead h1{
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+    -webkit-background-clip: text;
+}
 
+.btn-primary {
+    background-color: #C58444;
+}
+
+.text-primary {
+  color: #C58444 !important ;
+}
+
+.contact-section .card hr {
+    border-color: #C58444;
+}
 
 .projects-section .project-text hr {
     border-color: #C58444;
@@ -70,4 +70,47 @@
 .contact-section .card {
     border: 0;
     border-bottom: 0.25rem solid #C58444;
+}
+
+.img-cont{
+    height: 310px;
+    /*background-color: #212529;*/
+}
+
+.pro-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 95%
+}
+/*.pro-img{*/
+/*    margin: 8px;*/
+/*    width: 70%;*/
+/*}*/
+
+.project-text{
+    padding: 5px;
+}
+
+.qadd{
+    background-color: #C58444;
+    padding:10px 15px;
+}
+
+.add-div{
+    display: inline;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    color: #C58444;
+}
+@media (min-width: 992px){
+.projects-section .project-text {
+    padding: 5px;
+}
 }
