@@ -1,3 +1,6 @@
+#profile-p{
+    margin: 0px;
+}
 
 #mainNav {
     min-height: 56px;
@@ -37,6 +40,10 @@
     border-bottom: 0.25rem solid transparent;
 }
 
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #C58444;
+  }
+
 
 #mainNav.navbar-shrink .nav-link.active {
     color: #C58444;
@@ -52,7 +59,10 @@
 .btn-primary {
     background-color: #C58444;
 }
-
+.btn-primary:hover {
+  background-color: #bbbbbb;
+  color: black;
+}
 .text-primary {
   color: #C58444 !important ;
 }
@@ -72,24 +82,21 @@
     border-bottom: 0.25rem solid #C58444;
 }
 
-.img-cont{
-    height: 310px;
+/*.img-cont{*/
+/*    height: 310px;*/
     /*background-color: #212529;*/
-}
-
-.pro-img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 95%
-}
-/*.pro-img{*/
-/*    margin: 8px;*/
-/*    width: 70%;*/
 /*}*/
+
+/*.pro-img {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    width: 90%*/
+/*}*/
+
 
 .project-text{
     padding: 5px;
@@ -100,6 +107,9 @@
     padding:10px 15px;
 }
 
+.qbutton{
+    background-color: #C58444;
+}
 .add-div{
     display: inline;
 }
@@ -113,4 +123,9 @@
 .projects-section .project-text {
     padding: 5px;
 }
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #C58444;
 }
