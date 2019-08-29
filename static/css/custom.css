@@ -82,21 +82,6 @@
     border-bottom: 0.25rem solid #C58444;
 }
 
-/*.img-cont{*/
-/*    height: 310px;*/
-    /*background-color: #212529;*/
-/*}*/
-
-/*.pro-img {*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    width: 90%*/
-/*}*/
-
 
 .project-text{
     padding: 5px;
@@ -110,6 +95,13 @@
 .qbutton{
     background-color: #C58444;
 }
+
+.qcheckout{
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 25px;
+    padding:10px 15px;
+}
 .add-div{
     display: inline;
 }
@@ -119,6 +111,16 @@
     font-weight: bold;
     color: #C58444;
 }
+
+.fform{
+
+background-color: rgba(255,255,255,0.1);
+border:1px solid white;
+border-radius: 3px;
+padding: 5px;
+
+}
+
 @media (min-width: 992px){
 .projects-section .project-text {
     padding: 5px;
